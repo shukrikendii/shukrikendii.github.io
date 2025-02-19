@@ -10,7 +10,7 @@
 
 
 header {
-    background-color: #d6b80f;
+    background-color: #abfddb;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -56,7 +56,7 @@ section {
 }
 
 .main h2 {
-    color: #ffd700;
+    color: #abfddb;
     font-size: 1.4em;
     font-weight: 500;
 }
@@ -64,13 +64,13 @@ section {
 .main h2 span {
     display: inline-block;
     margin-top: 10px;
-    color: #ffd700;
+    color: #abfddb;
     font-size: 3em;
     font-weight: 600;
 }
 
 .main h3 {
-    color: #ffd700;
+    color: #abfddb;
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -98,7 +98,7 @@ section {
 }
 
 .social-icons a {
-    color: #d6b80f;
+    color: #abfddb;
     font-size: 1.7em;
     padding-right: 30px;
 }
@@ -112,6 +112,186 @@ section {
     margin-bottom: 30px;
 }
 
+/* About Section */
+.about {
+    background-color: #000016;
+    padding: 100px 200px;
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start; /* محاذاة العناصر من الأعلى */
+    gap: 50px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 60%; /* عرض الصورة */
+    height: 60%; /* ارتفاع الصورة */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%; /* تمتد الصورة على طول القسم */
+    object-fit: cover; /* تجنب تشويه الصورة */
+    border-radius: 15px;
+}
+
+.about-text {
+    flex: 2;
+    color: #abfddb; /* لون النص */
+}
+
+.about-text h3 {
+    color: #3a6cf4; /* لون العنوان */
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills h4 {
+    color: #3a6cf4; /* لون العنوان */
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    display: block;
+    font-weight: 500;
+    color: #000000; /* لون النص */
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    background: rgba(171, 253, 219, 0.2); /* خلفية شريط المهارة */
+    border-radius: 10px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.skill-level {
+    background: #3a6cf4; /* لون شريط التقدم */
+    height: 100%;
+    border-radius: 10px;
+}
+
+.skill-percentage {
+    display: block;
+    text-align: right;
+    font-size: 0.9em;
+    color: #000000; /* لون النسبة */
+    margin-top: 5px;
+}
+
+.why-laravel {
+    background: rgba(58, 108, 244, 0.1); /* خلفية زرقاء فاتحة */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.why-laravel h4 {
+    color: #3a6cf4; /* لون العنوان */
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.current-focus h4 {
+    color: #3a6cf4; /* لون العنوان */
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.current-focus ul {
+    list-style: none;
+    padding: 0;
+}
+
+.current-focus li {
+    margin-bottom: 10px;
+    color: #abfddb; /* لون النص */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-image {
+        max-width: 100%; /* عرض الصورة بالكامل على الشاشات الصغيرة */
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 80px 20px;
+    }
+}
+.skills h4 {
+    color: #3a6cf4;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    list-style: none;
+}
+
+.skills li {
+    background: #abfddb;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-image {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 80px 20px;
+    }
+    
+    .skills ul {
+        grid-template-columns: 1fr;
+    }
+}
 /* .content {
     display: flex;
     justify-content: center;
@@ -172,7 +352,7 @@ section {
 }
 
 .project-card {
-    background-color: #d6b80f;
+    background-color: #abfddb;
     border: 1px solid #fff;
     min-height: 14em;
     width: 23em;
